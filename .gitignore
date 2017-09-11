@@ -1,0 +1,11 @@
+# Created by .ignore support plugin (hsz.mobi)
+bin
+build
+.gradle
+.classpath
+.project
+.settings
+.metadata
+.idea
+/.idea
+spring-boot.iml

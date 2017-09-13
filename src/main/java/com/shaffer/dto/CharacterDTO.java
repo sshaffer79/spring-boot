@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Objects;
 
 public class CharacterDTO {
-    private String id;
+    private int id;
     private String name;
     private List<String> aliases;
     private Publisher publisher = Publisher.Independent;
@@ -19,11 +19,11 @@ public class CharacterDTO {
     public CharacterDTO() {
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

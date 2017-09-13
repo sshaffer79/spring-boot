@@ -17,19 +17,19 @@ public class CharacterAPIController {
 
     @RequestMapping(value = "/", method = RequestMethod.PUT)
     @ResponseBody
-    public CharacterDTO insert() {
-        return null;
+    public CharacterDTO insert(@ModelAttribute CharacterDTO characterDTO) {
+        return characterDTO;
     }
 
     @RequestMapping(value = "/", method = RequestMethod.POST)
     @ResponseBody
-    public CharacterDTO update() {
-        return null;
+    public CharacterDTO update(@ModelAttribute CharacterDTO characterDTO) {
+        return characterDTO;
     }
 
-    @RequestMapping(value = "/", method = RequestMethod.DELETE)
+    @RequestMapping(value = "/{id}/", method = RequestMethod.DELETE)
     @ResponseBody
-    public String delete() {
-        return null;
+    public String delete(@PathVariable("id") String id) {
+        return id;
     }
 }
